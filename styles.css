@@ -100,8 +100,12 @@ body {
 }
 
 #sharpshooter-screenshots-container img {
-  margin-bottom: 2rem;
-  width: 22rem;
+  margin-bottom: 0.5rem;
+  width: 28rem;
+}
+
+#projects #knowglet-screenshot {
+  width: 28rem;
 }
 
 footer {
@@ -153,6 +157,10 @@ footer p {
 
   #sharpshooter-screenshots-container img {
     margin: 0.5rem;
+    width: 16rem;
+  }
+
+  #projects #knowglet-screenshot {
     width: 16rem;
   }
 }
