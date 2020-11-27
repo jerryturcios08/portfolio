@@ -111,7 +111,15 @@ body {
   width: 28rem;
 }
 
-#projects #knowglet-screenshot {
+#knowglet-screenshots-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#knowglet-screenshots-container img {
+  margin-top: 0.5rem;
   width: 28rem;
 }
 
@@ -166,7 +174,8 @@ footer p {
     width: 16rem;
   }
 
-  #projects #knowglet-screenshot {
+  #knowglet-screenshots-container img {
+    margin: 0.5rem;
     width: 16rem;
   }
 }
