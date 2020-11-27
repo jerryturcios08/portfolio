@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <!-- Introduction section -->
+  <section id="jumbotron">
+    <div>
+      <h1>Hello! I'm Geraldine.</h1>
+      <h2>I am an aspiring iOS engineer with a passion for building useful and gorgeous applications.</h2>
+      <div id="jumbotron-links">
+        <a class="image-link" href="https://github.com/jerryturcios08" target="_blank"><i
+            class="fab fa-github fa-3x"></i></a>
+        <a class="image-link" href="https://www.linkedin.com/in/jerryturcios/" target="_blank"><i
+            class="fab fa-linkedin fa-3x"></i></a>
+        <a class="image-link" href="https://www.dropbox.com/s/0qtwj6nt9cba8re/Resume.docx?dl=0"><i
+            class="fas fa-file-alt fa-3x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <p id="skills-title">Skills &amp; Technologies</p>
+    <div id="skills-grid">
+      <div id="skills-grid-languages">
+        <p class="skills-grid-column-title"><i class="fas fa-code"></i> Languages</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>Swift</p>
+        <p>JavaScript</p>
+        <p>Python</p>
+      </div>
+      <div id="skills-grid-ios">
+        <p class="skills-grid-column-title"><i class="fas fa-mobile-alt"></i> iOS skills</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>UIKit</p>
+        <p>SwiftUI</p>
+        <p>SpriteKit</p>
+      </div>
+      <div id="skills-grid-frontend">
+        <p class="skills-grid-column-title"><i class="fas fa-desktop"></i> Front-end</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>SASS</p>
+        <p>React.js</p>
+      </div>
+      <div id="skills-grid-frontend">
+        <p class="skills-grid-column-title"><i class="fas fa-server"></i> Back-end</p>
+        <p class="skills-grid-column-divider">--------------------</p>
+        <p>Node.js</p>
+        <p>Postgres</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <p id="projects-title">Projects</p>
+
+    <!-- Mnemosyne -->
+    <div class="projects-container">
+      <span>
+        <img src="/images/mnemosyne-1.png" alt="Mnemosyne screenshot 1">
+        <img src="/images/mnemosyne-2.png" alt="Mnemosyne screenshot 2">
+      </span>
+      <span>
+        <p class="projects-container-title">Mnemosyne</p>
+        <p class="projects-container-description">Mnemosyne is an iOS application that is used to keep track previously
+          applied jobs. The app is built using SwiftUI, a declarative UI framework unveiled by Apple at WWDC 2019. All
+          the data that is created by the user is stored locally using UserDefaults.</p>
+        <p>Technologies: Swift, SwiftUI</p>
+        <div class="projects-links"><a class="github-link" href="https://github.com/jerryturcios08/Sharpshooter"
+            target="_blank">
+            <a class="image-link" href="https://github.com/jerryturcios08/Mnemosyne" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+            <a href="https://apps.apple.com/us/app/mnemosyne/id1537253453" target="_blank">
+              <img class="app-store-badge" src="/images/app-store-badge.png" alt="Mnemosyne App Store page">
+            </a>
+        </div>
+      </span>
+    </div>
+
+    <!-- Sharpshooter -->
+    <div class="projects-container">
+      <span id="sharpshooter-screenshots-container">
+        <img src="/images/sharpshooter-1.png" alt="Sharpshooter screenshot 1">
+        <img src="/images/sharpshooter-2.png" alt="Sharpshooter screenshot 2">
+      </span>
+      <span>
+        <p class="projects-container-title">Sharpshooter</p>
+        <p class="projects-container-description">Sharpshooter is an iOS application where the player has 60 seconds to
+          destroy as many green targets possible while avoiding to shoot the red targets. The user's high score is
+          stored
+          locally, and it is updated when the user breaks their record. The app is built using SpriteKit to handle
+          the 2D objects that appear on the screen. All the graphic assets like the background and targets were created
+          by me.</p>
+        <p>Technologies: Swift, UIKit, SpriteKit</p>
+        <div class="projects-links">
+          <a class="image-link" href="https://github.com/jerryturcios08/Sharpshooter" target="_blank">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+          <a href="https://apps.apple.com/us/app/sharpshooter-reaction-game/id1497183300" target="_blank">
+            <img class="app-store-badge" src="/images/app-store-badge.png" alt="Mnemosyne App Store page">
+          </a>
+        </div>
+      </span>
+    </div>
+
+    <!-- Hangman -->
+    <div class="projects-container">
+      <span>
+        <img src="/images/hangman-1.png" alt="Hangman screenshot 1">
+        <img src="/images/hangman-2.png" alt="Hangman screenshot 2">
+      </span>
+      <span>
+        <p class="projects-container-title">Hangman</p>
+        <p class="projects-container-description">Hangman is an iOS application where the user reveals a word by
+          guessing letters before they run out of tries. The app is
+          built programmatically using commonly used UIKit views and controls such as UIButton, UILabel and UIStackView.
+        </p>
+        <p>Technologies: Swift, UIKit</p>
+        <a class="image-link" href="https://github.com/jerryturcios08/Hangman" target="_blank">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </span>
+    </div>
+
+    <!-- Knowglet -->
+    <!-- Coming soon... -->
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© Geraldine 2020</p>
+  </footer>
+</body>
+
+</html>

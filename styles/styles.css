@@ -1,0 +1,157 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(233, 205, 243);
+  margin: 0;
+}
+
+.image-link {
+  color: black;
+  margin-right: 0.5rem;
+}
+
+#jumbotron {
+  color: rgb(70, 18, 107);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+#jumbotron h1 {
+  font-size: 40px;
+}
+
+#jumbotron h2 {
+  font-size: 20px;
+}
+
+#jumbotron #jumbotron-links {
+  margin-top: 3rem;
+}
+
+#skills {
+  background-color: rgb(231, 121, 184);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+#skills #skills-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+#skills #skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#skills #skills-grid p {
+  font-size: 24px;
+}
+
+#projects {
+  background-color: rgb(233, 205, 243);
+  color: rgb(70, 18, 107);
+  text-align: center;
+  width: 100vw;
+}
+
+#projects #projects-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+#projects .projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10rem 5rem;
+}
+
+#projects img {
+  width: 14rem;
+}
+
+#projects .projects-container-title {
+  font-size: 30px;
+}
+
+#projects .projects-container-description {
+  margin: 0 2rem;
+}
+
+#projects .app-store-badge {
+  width: 8rem;
+}
+
+#sharpshooter-screenshots-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sharpshooter-screenshots-container img {
+  margin-bottom: 2rem;
+  width: 22rem;
+}
+
+footer {
+  background-color: rgb(188, 72, 153);
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  #skills #skills-title {
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  #skills #skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #skills #skills-grid p {
+    font-size: 20px;
+  }
+
+  #skills .skills-grid-column-divider {
+    display: none;
+  }
+
+  #projects #projects-title {
+    padding-bottom: 2rem;
+  }
+
+  #projects .projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    margin-bottom: 10rem;
+  }
+
+  #projects img {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  #sharpshooter-screenshots-container img {
+    margin: 0.5rem;
+    width: 16rem;
+  }
+}
