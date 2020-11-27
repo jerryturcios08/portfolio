@@ -7,7 +7,7 @@ body {
 
 .image-link {
   color: black;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 #jumbotron {
@@ -88,6 +88,13 @@ body {
   margin: 0 2rem;
 }
 
+#projects .projects-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #projects .app-store-badge {
   width: 8rem;
 }
@@ -152,7 +159,6 @@ footer p {
 
   #projects img {
     width: 8rem;
-    margin-bottom: 2rem;
   }
 
   #sharpshooter-screenshots-container img {
