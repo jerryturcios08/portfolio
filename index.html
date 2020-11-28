@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <title>Portfolio Website</title>
 </head>
@@ -12,18 +12,21 @@
 <body>
   <!-- Introduction section -->
   <section id="jumbotron">
-    <div>
+    <img src="./img/bitmoji-avatar.jpg" alt="Bitmoji avatar">
+    <span>
       <h1>Hello! I'm Geraldine.</h1>
-      <h2>I am an aspiring iOS engineer with a passion for building useful and gorgeous applications.</h2>
-      <div id="jumbotron-links">
-        <a class="image-link" href="https://github.com/jerryturcios08" target="_blank"><i
-            class="fab fa-github fa-3x"></i></a>
-        <a class="image-link" href="https://www.linkedin.com/in/jerryturcios/" target="_blank"><i
-            class="fab fa-linkedin fa-3x"></i></a>
-        <a class="image-link" href="https://www.dropbox.com/s/0qtwj6nt9cba8re/Resume.docx?dl=0"><i
-            class="fas fa-file-alt fa-3x"></i></a>
-      </div>
-    </div>
+      <h2>I am an aspiring iOS engineer with a passion for building useful and gorgeous applications. Over the past two
+        years, I chased after my desire to learn languages and frameworks while building awesome products.</h2>
+      <button onclick="viewWorkButtonClicked()">View Work</button>
+    </span>
+    <!-- <div id="jumbotron-links">
+      <a class="image-link" href="https://github.com/jerryturcios08" target="_blank"><i
+          class="fab fa-github fa-3x"></i></a>
+      <a class="image-link" href="https://www.linkedin.com/in/jerryturcios/" target="_blank"><i
+          class="fab fa-linkedin fa-3x"></i></a>
+      <a class="image-link" href="https://www.dropbox.com/s/0qtwj6nt9cba8re/Resume.docx?dl=0"><i
+          class="fas fa-file-alt fa-3x"></i></a>
+    </div> -->
   </section>
 
   <!-- Skills section -->
@@ -68,21 +71,21 @@
     <!-- Mnemosyne -->
     <div class="projects-container">
       <span>
-        <img src="./images/mnemosyne-1.png" alt="Mnemosyne screenshot 1">
-        <img src="./images/mnemosyne-2.png" alt="Mnemosyne screenshot 2">
+        <img src="./img/mnemosyne-1.png" alt="Mnemosyne screenshot 1">
+        <img src="./img/mnemosyne-2.png" alt="Mnemosyne screenshot 2">
       </span>
       <span>
         <p class="projects-container-title">Mnemosyne</p>
         <p class="projects-container-description">Mnemosyne is an iOS application that is used to keep track previously
           applied jobs. The app is built using SwiftUI, a declarative UI framework unveiled by Apple at WWDC 2019. All
           the data that is created by the user is stored locally using UserDefaults.</p>
-        <p>Technologies: Swift, SwiftUI</p>
+        <p class="project-technologies">Technologies: Swift, SwiftUI</p>
         <div class="projects-links">
           <a class="image-link" href="https://github.com/jerryturcios08/Mnemosyne" target="_blank">
             <i class="fab fa-github fa-3x"></i>
           </a>
           <a href="https://apps.apple.com/us/app/mnemosyne/id1537253453" target="_blank">
-            <img class="app-store-badge" src="./images/app-store-badge.png" alt="Mnemosyne App Store page">
+            <img class="app-store-badge" src="./img/app-store-badge.png" alt="Mnemosyne App Store page">
           </a>
         </div>
       </span>
@@ -91,8 +94,8 @@
     <!-- Sharpshooter -->
     <div class="projects-container">
       <span id="sharpshooter-screenshots-container">
-        <img src="./images/sharpshooter-1.png" alt="Sharpshooter screenshot 1">
-        <img src="./images/sharpshooter-2.png" alt="Sharpshooter screenshot 2">
+        <img src="./img/sharpshooter-1.png" alt="Sharpshooter screenshot 1">
+        <img src="./img/sharpshooter-2.png" alt="Sharpshooter screenshot 2">
       </span>
       <span>
         <p class="projects-container-title">Sharpshooter</p>
@@ -102,13 +105,13 @@
           locally, and it is updated when the user breaks their record. The app is built using SpriteKit to handle
           the 2D objects that appear on the screen. All the graphic assets like the background and targets were created
           by me.</p>
-        <p>Technologies: Swift, UIKit, SpriteKit</p>
+        <p class="project-technologies">Technologies: Swift, UIKit, SpriteKit</p>
         <div class="projects-links">
           <a class="image-link" href="https://github.com/jerryturcios08/Sharpshooter" target="_blank">
             <i class="fab fa-github fa-3x"></i>
           </a>
           <a href="https://apps.apple.com/us/app/sharpshooter-reaction-game/id1497183300" target="_blank">
-            <img class="app-store-badge" src="./images/app-store-badge.png" alt="Mnemosyne App Store page">
+            <img class="app-store-badge" src="./img/app-store-badge.png" alt="Mnemosyne App Store page">
           </a>
         </div>
       </span>
@@ -117,8 +120,8 @@
     <!-- Hangman -->
     <div class="projects-container">
       <span>
-        <img src="./images/hangman-1.png" alt="Hangman screenshot 1">
-        <img src="./images/hangman-2.png" alt="Hangman screenshot 2">
+        <img src="./img/hangman-1.png" alt="Hangman screenshot 1">
+        <img src="./img/hangman-2.png" alt="Hangman screenshot 2">
       </span>
       <span>
         <p class="projects-container-title">Hangman</p>
@@ -126,7 +129,7 @@
           guessing letters before they run out of tries. The app's UI is built programmatically using commonly used
           UIKit views and controls.
         </p>
-        <p>Technologies: Swift, UIKit</p>
+        <p class="project-technologies">Technologies: Swift, UIKit</p>
         <a class="image-link" href="https://github.com/jerryturcios08/Hangman" target="_blank">
           <i class="fab fa-github fa-3x"></i>
         </a>
@@ -136,8 +139,8 @@
     <!-- Knowglet -->
     <div class="projects-container">
       <span id="knowglet-screenshots-container">
-        <img src="./images/knowglet-1.png" alt="Knowglet screenshot 1">
-        <img src="./images/knowglet-2.png" alt="Knowglet screenshot 2">
+        <img src="./img/knowglet-1.png" alt="Knowglet screenshot 1">
+        <img src="./img/knowglet-2.png" alt="Knowglet screenshot 2">
       </span>
       <span>
         <p class="projects-container-title">Knowglet</p>
@@ -148,15 +151,15 @@
           more specific content. My role was to develop a REST API for the search/tree algorithm while also implementing
           the functionality of the front-end. I collaborated with another front-end developer in implementing the design
           specifications from our designer on the team.</p>
-        <p>Technologies: JavaScript, Python, React.js, Django</p>
+        <p class="project-technologies">Technologies: JavaScript, Python, React.js, Django</p>
       </span>
     </div>
 
     <!-- CampNav -->
     <div class="projects-container">
       <span>
-        <img src="./images/campnav-1.png" alt="CampNav screenshot 1">
-        <img src="./images/campnav-2.png" alt="CampNav screenshot 2">
+        <img src="./img/campnav-1.png" alt="CampNav screenshot 1">
+        <img src="./img/campnav-2.png" alt="CampNav screenshot 2">
       </span>
       <span>
         <p class="projects-container-title">CampNav</p>
@@ -165,7 +168,7 @@
           AutoML, a ML tool for Google Cloud Platform. Once the user takes a photo of a campus building, the photo is
           sent to a Flask server which returns the name of the building along with a probability percentage based on the
           accuracy of the prediction.</p>
-        <p>Technologies: JavaScript, Python, React.js, Flask, AutoML</p>
+        <p class="project-technologies">Technologies: JavaScript, Python, React.js, Flask, AutoML</p>
         <div class="projects-links">
           <a class="image-link" href="https://github.com/jerryturcios08/campnav-client" target="_blank"
             title="React app repository">
@@ -184,6 +187,10 @@
   <footer>
     <p>© Geraldine 2020</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/scroll.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

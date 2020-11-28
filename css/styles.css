@@ -5,6 +5,28 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: rgb(70, 18, 107);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
 .image-link {
   color: black;
   margin-right: 1rem;
@@ -12,21 +34,30 @@ body {
 
 #jumbotron {
   color: rgb(70, 18, 107);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  align-content: center;
   height: 100vh;
-  padding: 0 1rem;
+  padding: 0 14rem;
+}
+
+#jumbotron img {
+  border: 0.4rem dotted rgb(231, 121, 184);
+  border-radius: 100%;
+  justify-self: flex-end;
+  margin-right: 6rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 #jumbotron h1 {
   font-size: 40px;
+  margin: 0;
 }
 
 #jumbotron h2 {
   font-size: 20px;
+  margin: 1rem 0;
 }
 
 #jumbotron #jumbotron-links {
@@ -37,14 +68,13 @@ body {
   background-color: rgb(231, 121, 184);
   color: white;
   width: 100vw;
-  height: 100vh;
+  padding: 2rem 0 6rem 0;
   text-align: center;
 }
 
 #skills #skills-title {
   font-size: 40px;
   font-weight: bold;
-  padding-top: 6rem;
   padding-bottom: 2rem;
 }
 
@@ -135,6 +165,31 @@ footer p {
 }
 
 @media (max-width: 1080px) {
+  #jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  #jumbotron img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  #jumbotron h1 {
+    font-size: 26px;
+  }
+
+  #jumbotron h2 {
+    margin: 1rem 6rem;
+    font-size: 18px;
+  }
+
   #skills #skills-title {
     font-size: 30px;
     padding-top: 2rem;
@@ -155,14 +210,20 @@ footer p {
   }
 
   #projects #projects-title {
+    font-size: 30px;
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
   #projects .projects-container {
-    display: grid;
     grid-template-columns: 1fr;
     margin: 0;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
+  }
+
+  #projects .project-technologies {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   #projects img {
@@ -177,5 +238,11 @@ footer p {
   #knowglet-screenshots-container img {
     margin: 0.5rem;
     width: 16rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #jumbotron h2 {
+    margin: 1rem 0.4rem;
   }
 }
