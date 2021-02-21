@@ -112,8 +112,9 @@ button:active {
 #projects .projects-container-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  text-align: left;
 }
 
 #projects img {
@@ -125,7 +126,7 @@ button:active {
 }
 
 #projects .projects-container-description {
-  margin: 0 2rem;
+  margin: 0 0rem;
 }
 
 #projects .projects-links {
