@@ -247,6 +247,12 @@ footer p {
     margin-bottom: 8rem;
   }
 
+  #projects .projects-container-content {
+    align-items: center;
+    margin: 2rem;
+    text-align: center;
+  }
+
   #projects .project-technologies {
     margin-left: 1rem;
     margin-right: 1rem;
